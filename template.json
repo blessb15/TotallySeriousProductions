@@ -1,0 +1,9 @@
+{
+  "name": "Just a Blog",
+  "description": "Responsive Jekyll blog with extras.",
+  "author": "Chad Person <chad@bowtie.io>",
+  "version": "0.0.3",
+  "image_url": null,
+  "example_link": "//blogging.bowtied.io",
+  "docs_link": "/docs/#projects"
+}
