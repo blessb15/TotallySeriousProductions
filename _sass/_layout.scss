@@ -12,13 +12,14 @@ a:hover {
 }
 
 // FONTS
+
  @font-face {
-  font-family: AprilFools;
-  src: url('/fonts/AprilFools.ttf');
- }
+   font-family: bebas;
+   src: url('/fonts/bebas.ttf')
+}
 
  .font1 {
-   font-family: AprilFools;
+   font-family: bebas;
  }
 
 
@@ -51,8 +52,8 @@ a:hover {
 }
 
 .nav-button {
-  margin-right: 50px;
-  font-size: 23px;
+  margin-right: 40px;
+  font-size: 17px;
   border-color: rgba(255, 255, 255, 0.5);
   border-style: solid;
   border-width: 2px;
@@ -68,16 +69,16 @@ a:hover {
 
 .media {
   color: #d3a248 !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   padding-left: 7px;
-  padding-right: 2px;
+  padding-right: 5px;
 }
 
 .contact {
   color: #d3a248 !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -91,27 +92,73 @@ a:hover {
 //BODY
 .index-contain {
   background-color: black;
-  padding-top: 50px;
-}
-
-h2.font1 {
-  color: white;
 }
 
 // showcase
 
+.newreleases {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: bebas !important;
+  font-size: 12px;
+  padding-right: 25px;
+}
+
+.mostviews {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: bebas !important;
+  font-size: 12px;
+}
+
+.all {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: bebas !important;
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+.active {
+  color: white;
+  font-family: bebas !important;
+  font-size: 25px !important;
+  text-align: center !important;
+}
+
 .showcase-title {
-  width: 500px;
+  width: 100%;
   height: 45px;
-  background-color: rgba(255, 255, 255, 0.09);
+  background-color: rgba(255, 255, 255, 0.1);
   padding-left: 15px;
-  padding-top: 5px;
-  border-radius: 0px 5px 5px 0px;
+  padding-top: 7px;
   margin-bottom: 25px;
+  text-align: center;
+}
+
+.showcase1 {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.show-1 {
+  float: left;
+}
+
+.show-2 {
+  float: right;
+}
+
+.show-3 {
+  float: right;
+}
+
+.show-4 {
+  float: left;
 }
 
 .showcase-vid {
   width: 300px;
   height: 300px;
-  padding-left: 15px;
+}
+
+.showcase2 {
+  display: none;
 }

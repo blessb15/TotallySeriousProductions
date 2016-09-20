@@ -2,23 +2,55 @@
 layout: "landing"
 ---
 
+<script>
+  $('showcase-title').click(function(){
+    $('newreleases').addClass('active');
+    console.log("HI");
+  });
+</script>
+
 <div class="index-contain">
 
   <div class="showcase-title">
-    <h2 class="font1">New Releases</h2>
+    <span class="newreleases  font1">New Releases</span>
+    <span class="mostviews font1">Most Views</span>
+    <span class="all font1 active">All</span>
   </div>
-  <div class="showcase">
-    <div class="show-1">
+
+  <div class="showcase1">
+    <div class="show-1 col-md-3">
       <iframe class="showcase-vid" src="https://www.youtube.com/embed/5VMGPdZMNDY?controls=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="show-2">
+    <div class="show-2 col-md-3">
       <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="show-3">
+    <div class="show-3 col-md-3">
       <iframe class="showcase-vid" src="https://www.youtube.com/embed/WVoVtinyk6o?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="show-2 col-md-3">
+      <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
-</div
+  <div class="showcase2">
+    <div class="show-1 col-md-3">
+      <iframe class="showcase-vid" src="https://www.youtube.com/embed/5VMGPdZMNDY?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="show-2 col-md-3">
+      <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="show-3 col-md-3">
+      <iframe class="showcase-vid" src="https://www.youtube.com/embed/WVoVtinyk6o?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="show-2 col-md-3">
+      <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
