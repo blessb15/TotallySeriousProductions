@@ -12,7 +12,6 @@ a:hover {
 }
 
 // FONTS
-
  @font-face {
    font-family: bebas;
    src: url('/fonts/bebas.ttf')
@@ -21,7 +20,6 @@ a:hover {
  .font1 {
    font-family: bebas;
  }
-
 
 // HEADER
 .video {
@@ -48,7 +46,7 @@ a:hover {
   padding: 15px;
   text-align: right;
   box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.7);
-
+  padding-top: 17px;
 }
 
 .nav-button {
@@ -125,38 +123,72 @@ a:hover {
 
 .showcase-title {
   width: 100%;
-  height: 45px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0.1);
   padding-left: 15px;
   padding-top: 7px;
-  margin-bottom: 25px;
+  padding-bottom: 25px !important;
   text-align: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  position: relative;
 }
 
 .showcase1 {
   width: 100%;
-  margin-right: 20px;
+  text-align: center;
+  margin: auto;
+  background-color: #003642 !important;
+  height: 100%;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.center {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .show-1 {
+  width: 300px;
   float: left;
+  margin-right: 25px;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .show-2 {
-  float: right;
+  width: 300px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .show-3 {
-  float: right;
+  width: 300px;
+  float: left;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .show-4 {
+  width: 300px;
   float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .showcase-vid {
   width: 300px;
   height: 300px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .showcase2 {

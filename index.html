@@ -2,13 +2,6 @@
 layout: "landing"
 ---
 
-<script>
-  $('showcase-title').click(function(){
-    $('newreleases').addClass('active');
-    console.log("HI");
-  });
-</script>
-
 <div class="index-contain">
 
   <div class="showcase-title">
@@ -18,20 +11,22 @@ layout: "landing"
   </div>
 
   <div class="showcase1">
-    <div class="show-1 col-md-3">
-      <iframe class="showcase-vid" src="https://www.youtube.com/embed/5VMGPdZMNDY?controls=0" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <div class="center">
+      <div class="show-1">
+        <iframe class="showcase-vid" src="https://www.youtube.com/embed/5VMGPdZMNDY?controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-    <div class="show-2 col-md-3">
-      <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
-    </div>
+      <div class="show-2">
+        <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-    <div class="show-3 col-md-3">
-      <iframe class="showcase-vid" src="https://www.youtube.com/embed/WVoVtinyk6o?controls=0" frameborder="0" allowfullscreen></iframe>
-    </div>
+      <div class="show-3">
+        <iframe class="showcase-vid" src="https://www.youtube.com/embed/WVoVtinyk6o?controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
 
-    <div class="show-2 col-md-3">
-      <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
+      <div class="show-4">
+        <iframe class="showcase-vid" src="https://www.youtube.com/embed/Ejj_JcK-6_c?controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
@@ -54,3 +49,9 @@ layout: "landing"
   </div>
 
 </div>
+
+<script>
+  $("mostviews").click(function(){
+    console.log("HI");
+  });
+</script>
