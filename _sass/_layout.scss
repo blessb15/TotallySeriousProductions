@@ -1,3 +1,93 @@
+//MEDIA QUERIES
+@media screen and (max-width: 1430px) {
+  .center {
+    padding-left: 10% !important;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .center {
+    padding-left: 15% !important;
+    position: relative;
+  }
+}
+
+// @media screen and (max-width: 1121px) {
+//   .center {
+//     padding-left: 20% !important;
+//     padding-right: 20% !important;
+//
+//   }
+// }
+
+@media screen and (max-width: 770px) {
+  .center {
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .center {
+    padding-left: 15% !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .center {
+    padding-left: 15% !important;
+  }
+
+  .nav-home-button {
+    display: none;
+  }
+
+  .media {
+
+  }
+
+  .showcase-vid {
+    height: 200px !important;
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .center {
+    padding-left: 5% !important;
+  }
+
+  .nav-home-button {
+    display: none;
+  }
+
+  .media {
+
+  }
+
+  .showcase-vid {
+    height: 200px !important;
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .center {
+    padding-left: 0% !important;
+  }
+
+  .nav-home-button {
+    display: none;
+  }
+
+  .media {
+
+  }
+
+  .showcase-vid {
+    height: 200px !important;
+    width: 200px !important;
+  }
+}
+
 //BASE ELEMENTS
 a:hover {
   text-decoration: none;
@@ -49,6 +139,13 @@ a:hover {
   padding-top: 17px;
 }
 
+.nav-home-button {
+  font-size: 25px;
+  float:left;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
 .nav-button {
   margin-right: 40px;
   font-size: 17px;
@@ -81,18 +178,25 @@ a:hover {
   padding-right: 7px;
 }
 
-.nav-home-button {
-  font-size: 25px;
-  float:left;
-  margin-bottom: 10px;
-}
-
 //BODY
 .index-contain {
   background-color: black;
 }
 
 // showcase
+
+.showcase-title {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 25px !important;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  position: relative;
+}
 
 .newreleases {
   color: rgba(255, 255, 255, 0.5);
@@ -119,19 +223,6 @@ a:hover {
   font-family: bebas !important;
   font-size: 25px !important;
   text-align: center !important;
-}
-
-.showcase-title {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 15px;
-  padding-top: 7px;
-  padding-bottom: 25px !important;
-  text-align: center;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  z-index: 5;
-  position: relative;
 }
 
 .showcase1 {
