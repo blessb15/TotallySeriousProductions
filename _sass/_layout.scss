@@ -40,10 +40,6 @@
     display: none;
   }
 
-  .media {
-
-  }
-
   .showcase-vid {
     height: 200px !important;
     width: 200px !important;
@@ -59,10 +55,6 @@
     display: none;
   }
 
-  .media {
-
-  }
-
   .showcase-vid {
     height: 200px !important;
     width: 200px !important;
@@ -76,10 +68,6 @@
 
   .nav-home-button {
     display: none;
-  }
-
-  .media {
-
   }
 
   .showcase-vid {
@@ -205,10 +193,18 @@ a:hover {
   padding-right: 25px;
 }
 
+.newreleases:hover {
+  cursor: pointer;
+}
+
 .mostviews {
   color: rgba(255, 255, 255, 0.5);
   font-family: bebas !important;
   font-size: 12px;
+}
+
+.mostviews:hover {
+  cursor: pointer;
 }
 
 .all {
@@ -218,6 +214,10 @@ a:hover {
   padding-left: 25px;
 }
 
+.all:hover {
+  cursor: pointer;
+}
+
 .active {
   color: white;
   font-family: bebas !important;
@@ -225,7 +225,7 @@ a:hover {
   text-align: center !important;
 }
 
-.showcase1 {
+.showcase-mv {
   width: 100%;
   text-align: center;
   margin: auto;
@@ -248,7 +248,7 @@ a:hover {
   width: 300px;
   float: left;
   margin-right: 25px;
-  margin-left: auto;
+  margin-left: 25px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -282,6 +282,24 @@ a:hover {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.showcase2 {
+.showcase-nr {
   display: none;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: #003642 !important;
+  height: 100%;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.showcase-all {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: #003642 !important;
+  height: 100%;
+  padding-top: 40px;
+  z-index: 1;
 }
