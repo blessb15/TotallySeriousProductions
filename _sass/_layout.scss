@@ -1,80 +1,16 @@
+// FONTS
+
+ @font-face {
+   font-family: bebas;
+   src: url('/fonts/bebas.ttf')
+}
+
+ .font1 {
+   font-family: bebas;
+ }
+
 //MEDIA QUERIES
-@media screen and (max-width: 1430px) {
-  .center {
-    padding-left: 10% !important;
-  }
-}
 
-@media screen and (max-width: 1155px) {
-  .center {
-    padding-left: 15% !important;
-    position: relative;
-  }
-}
-
-// @media screen and (max-width: 1121px) {
-//   .center {
-//     padding-left: 20% !important;
-//     padding-right: 20% !important;
-//
-//   }
-// }
-
-@media screen and (max-width: 770px) {
-  .center {
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .center {
-    padding-left: 15% !important;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .center {
-    padding-left: 15% !important;
-  }
-
-  .nav-home-button {
-    display: none;
-  }
-
-  .showcase-vid {
-    height: 200px !important;
-    width: 200px !important;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .center {
-    padding-left: 5% !important;
-  }
-
-  .nav-home-button {
-    display: none;
-  }
-
-  .showcase-vid {
-    height: 200px !important;
-    width: 200px !important;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .center {
-    padding-left: 0% !important;
-  }
-
-  .nav-home-button {
-    display: none;
-  }
-
-  .showcase-vid {
-    height: 200px !important;
-    width: 200px !important;
-  }
-}
 
 //BASE ELEMENTS
 a:hover {
@@ -89,18 +25,8 @@ a:hover {
   color: #d3a248 !important;
 }
 
-// FONTS
- @font-face {
-   font-family: bebas;
-   src: url('/fonts/bebas.ttf')
-}
-
- .font1 {
-   font-family: bebas;
- }
-
 // HEADER
-.video {
+.intro-video {
   margin: auto;
   display: block;
   width: 100%;
@@ -112,7 +38,6 @@ a:hover {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 // NAVBAR
 .nav-bar {
@@ -171,9 +96,10 @@ a:hover {
   background-color: black;
 }
 
-// showcase
+//SHOWCASE
+//BAR
 
-.showcase-title {
+.showcase-bar {
   width: 100%;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -186,120 +112,32 @@ a:hover {
   position: relative;
 }
 
-.newreleases {
-  color: rgba(255, 255, 255, 0.5);
+.showcase-title {
+  color: rgba(255, 255, 255, 1);
   font-family: bebas !important;
-  font-size: 12px;
-  padding-right: 25px;
-}
-
-.newreleases:hover {
-  cursor: pointer;
-}
-
-.mostviews {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: bebas !important;
-  font-size: 12px;
-}
-
-.mostviews:hover {
-  cursor: pointer;
-}
-
-.all {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: bebas !important;
-  font-size: 12px;
+  font-size: 25px;
   padding-left: 25px;
 }
 
-.all:hover {
-  cursor: pointer;
-}
+// VIDEOS
 
-.active {
-  color: white;
-  font-family: bebas !important;
-  font-size: 25px !important;
-  text-align: center !important;
-}
-
-.showcase-mv {
+.showcase {
   width: 100%;
-  text-align: center;
-  margin: auto;
-  background-color: #003642 !important;
   height: 100%;
   padding-top: 40px;
+  background-color: #003642 !important;
   z-index: 1;
+  text-align: center;
 }
 
-.center {
+.video {
+  width: 100%;
   display: inline-block;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  margin-bottom: 50px;
-}
-
-.show-1 {
-  width: 300px;
-  float: left;
-  margin-right: 25px;
-  margin-left: 25px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.show-2 {
-  width: 300px;
-  float: left;
-  margin-right: 25px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.show-3 {
-  width: 300px;
-  float: left;
-  margin-right: 25px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.show-4 {
-  width: 300px;
-  float: left;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .showcase-vid {
-  width: 300px;
-  height: 300px;
+  width: 850px;
+  height: 450px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.showcase-nr {
-  display: none;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  background-color: #003642 !important;
-  height: 100%;
-  padding-top: 40px;
-  z-index: 1;
-}
-
-.showcase-all {
-  display: none;
-  width: 100%;
-  text-align: center;
-  margin: auto;
-  background-color: #003642 !important;
-  height: 100%;
-  padding-top: 40px;
-  z-index: 1;
 }
