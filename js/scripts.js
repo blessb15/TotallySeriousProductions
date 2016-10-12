@@ -1,5 +1,6 @@
+$('.nav-drop').hide();
+
 $(document).ready(function(){
-  $('.nav-drop').hide();
   var channelName = 'TotallySeriousVideos';
   var videoArray = [];
 
