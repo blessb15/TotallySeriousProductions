@@ -1,5 +1,3 @@
-$('.nav-drop').hide();
-
 $(document).ready(function(){
   var channelName = 'TotallySeriousVideos';
   var videoArray = [];
@@ -58,15 +56,16 @@ $(document).ready(function(){
     if($(window).scrollTop() < $('.welcome').height()) {
       $('.nav-bar').addClass('opac-bar');
       $('.nav-drop').addClass('opac-bar');
+      $('.tsp-logo').removeClass('tsp-solid');
     }
     if($(window).scrollTop() >= $('.welcome').height()) {
       $('.nav-bar').removeClass('opac-bar');
       $('.nav-drop').removeClass('opac-bar');
+      $('.tsp-logo').addClass('tsp-solid');
     }
   });
 
   $('.burger-icon').click(function() {
-    console.log("hi");
     $('.nav-drop').toggle();
   });
 });

@@ -79,6 +79,14 @@ a:hover {
   font-size: 30px;
   font-family: blacklisted;
   opacity: 0.7;
+  transition: opacity, 1s, ease-in-out;
+  -webkit-transition: opacity, 1s, ease-in-out;
+}
+
+.tsp-solid {
+  opacity: 1;
+  transition: opacity, 1s, ease-in-out;
+  -webkit-transition: opacity, 1s, ease-in-out;
 }
 
 .nav-burger {
@@ -98,6 +106,7 @@ a:hover {
 }
 
 .nav-drop {
+  display: none;
   padding-right: 15px;
   float: right;
   width: 105px;
