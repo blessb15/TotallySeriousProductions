@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $('.nav-drop').hide();
   var channelName = 'TotallySeriousVideos';
   var videoArray = [];
 
@@ -56,9 +56,16 @@ $(document).ready(function(){
   $(window).scroll(function(){
     if($(window).scrollTop() < $('.welcome').height()) {
       $('.nav-bar').addClass('opac-bar');
+      $('.nav-drop').addClass('opac-bar');
     }
     if($(window).scrollTop() >= $('.welcome').height()) {
       $('.nav-bar').removeClass('opac-bar');
+      $('.nav-drop').removeClass('opac-bar');
     }
+  });
+
+  $('.burger-icon').click(function() {
+    console.log("hi");
+    $('.nav-drop').toggle();
   });
 });
