@@ -20,8 +20,30 @@
 
 //MEDIA QUERIES
 
+@media screen and (max-width: 600px) {
+  .welcome {
+    height: 75vh !important;
+  }
 
-//BASE ELEMENTS
+  .head-pic {
+    height: 75vh !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .welcome {
+    height: 50vh !important;
+  }
+
+  .head-pic {
+    height: 50vh !important;
+    width: 100% !important;
+    background-size: 100% !important;
+  }
+}
+
+//BASE STUFF
+
 a:hover {
   text-decoration: none;
 }
@@ -35,20 +57,70 @@ a:hover {
 }
 
 // HEADER
-.intro-video {
-  margin: auto;
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
 
 .welcome {
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.head-pic {
+  height: 100vh;
+  width: 100%;
+  background:
+  url("/img/tsplogo2.png");
+  background-size: 65%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+  z-index: 7;
+  display: none;
+}
+
+.enter-button-div {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.enter-button-inline {
+  margin-top: 25%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  width: 200px;
+  height: 60px;
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: thin;
+  transition: border, 1s, ease-in-out;
+  -webkit-transition: border, 1s, ease-in-out;
+}
+
+.enter-button-inline:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  transition: border, 1s, ease-in-out;
+  -webkit-transition: border, 1s, ease-in-out;
+  cursor: pointer;
+}
+
+.enter-button-text {
+  color: rgba(255, 255, 255, 1);
+  transition: color, 1s, ease-in-out;
+  -webkit-transition: color, 1s, ease-in-out;
+}
+
+.enter-button-text:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color, 1s, ease-in-out;
+  -webkit-transition: color, 1s, ease-in-out;
 }
 
 // NAVBAR
+
 .nav-bar {
   transition: background-color, 1s, box-shadow, 1s, ease-in-out;
   -webkit-transition: background-color, 1s, box-shadow, 1s, ease-in-out;
@@ -137,12 +209,13 @@ a.media:hover {
 }
 
 //BODY
+
 .index-contain {
   background-color: black;
+  display: none;
 }
 
 //SHOWCASE
-//BAR
 
 .showcase-bar {
   width: 100%;
@@ -161,7 +234,6 @@ a.media:hover {
   color: rgba(255, 255, 255, 1);
   font-family: bebas !important;
   font-size: 30px;
-  padding-top: 4px;
 }
 
 // VIDEOS
@@ -178,7 +250,9 @@ a.media:hover {
 .video {
   width: 100%;
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .video-title {

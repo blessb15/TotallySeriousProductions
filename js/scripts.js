@@ -68,4 +68,10 @@ $(document).ready(function(){
   $('.burger-icon').click(function() {
     $('.nav-drop').toggle();
   });
+
+  $('.enter-button-inline').click(function(){
+    $('.head-pic').fadeIn(3000);
+    $('.index-contain').show();
+    $('.enter-button-div').hide();
+  });
 });
