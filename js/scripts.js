@@ -72,6 +72,7 @@ $(document).ready(function(){
   $('.enter-button-inline').click(function(){
     $('.head-pic').fadeIn(3000);
     $('.index-contain').show();
+    $('.footer').show();
     $('.enter-button-div').hide();
   });
 });
