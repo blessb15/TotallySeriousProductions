@@ -69,10 +69,10 @@ $(document).ready(function(){
     $('.nav-drop').toggle();
   });
 
-  $('.enter-button-inline').click(function(){
+  $('#tsp-pic').load(function(){
     $('.head-pic').fadeIn(3000);
-    $('.index-contain').show();
+    $('.head-pic').addClass('head-pic-enlarge');
     $('.footer').show();
-    $('.enter-button-div').hide();
+    $('.index-contain').show();
   });
 });
