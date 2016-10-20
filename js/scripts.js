@@ -37,7 +37,7 @@ $(document).ready(function(){
         $.each(data.items, function(i, item) {
           var newVideo = new Video(item.snippet.thumbnails.high.url, item.snippet.resourceId.videoId, item.snippet.position, item.snippet.title);
           videoArray.push(newVideo);
-          $('.showcase').append('<div class="video" id="'+ newVideo.videoRelevancy +'"><div class="video-title font1">' + newVideo.videoTitle + '</div><div class="' + newVideo.videoRelevancy + '-video-thumbnail"><img src="' + newVideo.videoThumbnail + '" class="video-thumbnail"/></div><div class="' + newVideo.videoRelevancy + '-video-overlay video-overlay"><div class=" video-modal"><iframe width="950" height="500" src="https://www.youtube.com/embed/' + newVideo.videoId + '" frameborder="0" allowfullscreen></iframe></div><div><p class="' + newVideo.videoRelevancy + '-close-overlay close-overlay"></p></div></div></div>');
+          $('.showcase').append('<div class="video" id="'+ newVideo.videoRelevancy +'"><div class="video-title font1">' + newVideo.videoTitle + '</div><div class="' + newVideo.videoRelevancy + '-video-thumbnail"><img src="' + newVideo.videoThumbnail + '" class="video-thumbnail"/></div><div class="' + newVideo.videoRelevancy + '-video-overlay video-overlay"><div class="video-modal"><iframe width="95%" height="100%" src="https://www.youtube.com/embed/' + newVideo.videoId + '" frameborder="0" allowfullscreen></iframe></div><div><p class="' + newVideo.videoRelevancy + '-close-overlay close-overlay"></p></div></div></div>');
           $('.' + newVideo.videoRelevancy + '-video-overlay').hide();
 
           $('#' + newVideo.videoRelevancy + '').click(function() {

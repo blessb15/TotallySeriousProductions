@@ -20,6 +20,20 @@
 
 //MEDIA QUERIES
 
+@media screen and (max-width: 800px) {
+  .video-modal {
+    height: 50vh !important;
+    width: 100% !important;
+    line-height: 200px !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin-left: -50% !important;
+    margin-top: -23vh !important;
+    z-index: 11 !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .welcome {
     height: 75vh !important;
@@ -86,7 +100,7 @@ a:hover {
 }
 
 .enter-button-inline {
-  margin-top: 25%;
+  margin-top: 45vh;
   display: inline-block;
   color: white;
   text-align: center;
@@ -187,7 +201,6 @@ a:hover {
   transition: background-color, 1s, ease-in-out;
   -webkit-transition: background-color, 1s, ease-in-out;
   border-radius: 0px 0px 0px 4px;
-  z-index: 5;
 }
 
 .nav-contact {
@@ -226,8 +239,8 @@ a.media:hover {
   padding-bottom: 25px !important;
   text-align: center;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  z-index: 2;
   position: relative;
+  z-index: 2;
 }
 
 .showcase-title {
@@ -282,16 +295,14 @@ a.media:hover {
 }
 
 .video-modal {
-  width: 950px;
-  height: 500px;
+  height: 67vh;
+  width: 75%;
   line-height: 200px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -250px;
-  margin-left: -465px;
-  border-radius: 5px;
-  text-align: center;
+  margin-left: -38%;
+  margin-top: -33vh;
   z-index: 11;
 }
 
