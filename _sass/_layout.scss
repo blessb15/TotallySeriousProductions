@@ -43,6 +43,10 @@
     height: 75vh !important;
     width: 100% !important;
   }
+
+  .footer-form {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -74,27 +78,6 @@ a:hover {
   color: #d3a248 !important;
 }
 
-// HEADER
-
-.welcome {
-  background-color: black;
-  height: 100vh;
-  width: 100%;
-}
-
-#tsp-pic {
-  height: 95vh;
-  padding: 15px;
-  z-index: 7;
-  display: block;
-  margin: 0 auto;
-
-}
-
-.head-pic-enlarge {
-  background-size: 70%;
-}
-
 // NAVBAR
 
 .nav-bar {
@@ -103,7 +86,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 60px;
-  z-index: 5;
   position: fixed;
   text-align: right;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
@@ -118,8 +100,8 @@ a:hover {
 
 .nav-tsp {
   float:left;
-  margin-left: 15px;
-  margin-top: 8px;
+  margin-left: 13px;
+  margin-top: 2px;
 }
 
 .tsp-logo {
@@ -183,6 +165,66 @@ a.media:hover {
   color: #d3a248 !important;
 }
 
+// HEADER
+
+.carousel {
+  width: 100%;
+  height: 80vh;
+}
+
+.indicator-left {
+  color: white;
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  height: 80vh;
+  float: left;
+  padding-top: 35vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.indicator-right {
+  color: white;
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  height: 80vh;
+  float: right;
+  padding-top: 35vh;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-ol {
+  list-style-type: none;
+  margin-left: 0px !important;
+}
+
+.carousel-li {
+  top: -80vh;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+.carousel-li-text {
+  color: black;
+  font-size: 35px;
+}
+
+.carousel-img {
+  width: 100%;
+
+}
+
+.active {
+  display: block;
+  position: relative;
+}
+
 //BODY
 
 .index-contain {
@@ -200,8 +242,6 @@ a.media:hover {
   padding-bottom: 25px !important;
   text-align: center;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 2;
 }
 
 .showcase-title {

@@ -53,12 +53,12 @@ $(document).ready(function(){
   }
 
   $(window).scroll(function(){
-    if($(window).scrollTop() < $('.welcome').height()) {
+    if($(window).scrollTop() < $('.carousel').height()) {
       $('.nav-bar').addClass('opac-bar');
       $('.nav-drop').addClass('opac-bar');
       $('.tsp-logo').removeClass('tsp-solid');
     }
-    if($(window).scrollTop() >= $('.welcome').height()) {
+    if($(window).scrollTop() >= $('.carousel').height()) {
       $('.nav-bar').removeClass('opac-bar');
       $('.nav-drop').removeClass('opac-bar');
       $('.tsp-logo').addClass('tsp-solid');
@@ -69,10 +69,4 @@ $(document).ready(function(){
     $('.nav-drop').toggle();
   });
 
-  $('#tsp-pic').load(function(){
-    $('.head-pic').fadeIn(3000);
-    $('.head-pic').addClass('head-pic-enlarge');
-    $('.footer').show();
-    $('.index-contain').show();
-  });
 });
