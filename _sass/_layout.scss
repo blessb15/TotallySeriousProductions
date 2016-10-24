@@ -93,7 +93,7 @@
   }
 
   .carousel-text {
-    top: 130px !important;
+    top: 110px !important;
     font-size: 38px !important;
   }
 
@@ -415,17 +415,22 @@ a.media:hover {
 }
 
 .email {
-  width: 235px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  width: 234px;
   height: 35px;
   padding-left: 5px;
   margin-bottom: 15px;
   font-family: serif;
 }
 
-.text {
+.message {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
   padding-top: 10px;
   padding-left: 5px;
-  margin-bottom: 15px;
 }
 
 .form-button {

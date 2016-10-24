@@ -11,12 +11,16 @@
   <div class="footer-form">
     <h2 class="font1 form-title">Contact Us</h2>
     <form method="POST" action="http://formspree.io/Totallyseriousproductions@gmail.com">
-      <center><input type="email" class="email" name="email" placeholder="Your email">
+      <center>
+      <div class="row">
+        <input type="email" name="_replyto" placeholder="Your Email" class="email" cols="30"></input>
+      </div>
+      <div class="row">
+        <textarea name="message" placeholder="Your message" class="message" rows="5" cols="30"></textarea>
+      </div>
       <br />
-      <textarea name="message" class="text" placeholder="Your message" rows="5" cols="30"></textarea>
-      <br />
-      <div class="form-button">
-        <p type="submit" class="button-text font1">Send</p>
+      <div class="row">
+        <input type="submit" value="Send" class="form-button">
       </div></center>
     </form>
   </div>
