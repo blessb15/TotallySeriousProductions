@@ -39,19 +39,27 @@
     height: 65vh !important;
   }
 
-  .indicator-left {
+  .carousel-right-fade  {
     height: 65vh !important;
   }
 
-  .indicator-right {
+  .carousel-left-fade  {
     height: 65vh !important;
   }
 
   .carousel-img {
-    height: 65vh !important;
-    right: 100px !important;
+    height: 70vh !important;
     position: relative;
     z-index: -1;
+  }
+
+  .carousel-text {
+    top: 125px !important;
+    font-size: 50px !important;
+  }
+
+  .footer {
+    height: 550px !important;
   }
 
   .carousel-li {
@@ -61,12 +69,38 @@
   .footer-form {
     width: 100% !important;
   }
+
+  .footer-social {
+    position: static !important;
+    bottom: 0px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    margin-bottom: 20px;
+    width: auto !important;
+  }
+
+  .social-title {
+    margin-bottom: 40px !important;
+  }
+
+
 }
 
 @media screen and (max-width: 400px) {
 
   .video-title {
     font-size: 17px !important;
+  }
+
+  .carousel-text {
+    top: 130px !important;
+    font-size: 38px !important;
+  }
+
+  .carousel-img {
+    height: 66vh !important;
+    position: relative;
+    z-index: -1;
   }
 }
 
@@ -172,14 +206,12 @@ a.media:hover {
   text-align: center;
 }
 
-.indicator-left {
+.carousel-left-fade {
   color: white;
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   height: 80vh;
   float: left;
-  padding-top: 35vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 150px;
   font-size: 50px;
   position: relative;
   z-index: 1;
@@ -187,27 +219,17 @@ a.media:hover {
   -webkit-user-select: none;
 }
 
-.indicator-left:hover {
-  cursor: pointer;
-}
-
-.indicator-right {
+.carousel-right-fade {
   color: white;
-  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   height: 80vh;
   float: right;
-  padding-top: 35vh;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: 150px;
   font-size: 50px;
   position: relative;
   z-index: 1;
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
-}
-
-.indicator-right:hover {
-  cursor: pointer;
 }
 
 .carousel-ol {
@@ -238,7 +260,7 @@ a.media:hover {
 
 .carousel-img {
   width: 100%;
-  min-width: 1025px;
+  min-width: 100%;
   height: 120vh;
 }
 
@@ -276,19 +298,19 @@ a.media:hover {
 
 .showcase {
   width: 100%;
-  height: 100%;
+  min-height: 6300px;
+  height: auto;
   padding-top: 40px;
   background-color: #1e5e64 !important;
-  z-index: 1;
   text-align: center;
 }
 
 .video {
-  width: 100%;
+  // width: 100%;
   display: inline-block;
   margin-bottom: 45px;
-  padding-left: 25px;
-  padding-right: 25px;
+  // padding-left: 25px;
+  // padding-right: 25px;
 }
 
 .video-title {
@@ -296,7 +318,7 @@ a.media:hover {
   font-family: bebas;
   color: white;
   padding-bottom: 13px;
-  font-size: 23px;
+  font-size: 17px;
 }
 
 .video-thumbnail {
@@ -356,13 +378,34 @@ a.media:hover {
 
 .footer {
   height: 300px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.1);
+  background-color: #7a7a7a;
+}
+
+.footer-social {
+  width: 30%;
+  position: absolute;
+  left: 55%;
+  padding: 15px;
+  text-align: center;
+}
+
+.social-title {
+  color: white;
+  margin-bottom: 55px;
+}
+
+.social-buttons {
+  width: 55px;
 }
 
 .footer-form {
   padding: 15px;
   height: 300px;
-  background-color: #d3a248;
-  width: 50%;
+  width: 65%;
+  margin: none;
 }
 
 .form-title {
@@ -393,10 +436,13 @@ a.media:hover {
   border-width: thin;
   border-color: white;
   text-align: center;
+  transition: .7s, background-color, ease-in-out;
 }
 
 .form-button:hover {
   cursor: pointer;
+  transition: .7s, background-color, ease-in-out;
+  background-color: #d3a248;
 }
 
 .button-text {

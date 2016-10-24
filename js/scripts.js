@@ -37,7 +37,7 @@ $(document).ready(function(){
         $.each(data.items, function(i, item) {
           var newVideo = new Video(item.snippet.thumbnails.high.url, item.snippet.resourceId.videoId, item.snippet.position, item.snippet.title);
           videoArray.push(newVideo);
-          $('.showcase').append('<div class="video" id="'+ newVideo.videoRelevancy +'"><div class="video-title font1">' + newVideo.videoTitle + '</div><div class="' + newVideo.videoRelevancy + '-video-thumbnail"><img src="' + newVideo.videoThumbnail + '" class="video-thumbnail"/></div><div class="' + newVideo.videoRelevancy + '-video-overlay video-overlay"><div class="video-modal"><iframe width="95%" height="100%" src="https://www.youtube.com/embed/' + newVideo.videoId + '" frameborder="0" allowfullscreen></iframe></div><div><p class="' + newVideo.videoRelevancy + '-close-overlay close-overlay"></p></div></div></div>');
+          $('.showcase').append('<div class="video col-md-6" id="'+ newVideo.videoRelevancy +'"><div class="video-title font1">' + newVideo.videoTitle + '</div><div class="' + newVideo.videoRelevancy + '-video-thumbnail"><img src="' + newVideo.videoThumbnail + '" class="video-thumbnail"/></div><div class="' + newVideo.videoRelevancy + '-video-overlay video-overlay"><div class="video-modal"><iframe width="95%" height="100%" src="https://www.youtube.com/embed/' + newVideo.videoId + '" frameborder="0" allowfullscreen></iframe></div><div><p class="' + newVideo.videoRelevancy + '-close-overlay close-overlay"></p></div></div></div>');
           $('.' + newVideo.videoRelevancy + '-video-overlay').hide();
 
           $('#' + newVideo.videoRelevancy + '').click(function() {
@@ -62,45 +62,9 @@ $(document).ready(function(){
     liPictures.push(this);
   });
 
-  $('.indicator-left').click(function() {
-    for(i = 0; i < liPictures.length; i++){
-      if ((i === 0) && ($(liPictures[i]).hasClass('active'))) {
-        $(liPictures[i]).removeClass('active');
-        $(liPictures[liPictures.length - 1]).addClass('active');
-        break;
-      }
-      if ((i > 0) && ($(liPictures[i]).hasClass('active'))) {
-        $(liPictures[i]).removeClass('active');
-        $(liPictures[i - 1]).addClass('active');
-        break;
-      }
-    }
-  });
-
-
-  $('.indicator-right').click(function() {
-    for(i = 0; i < liPictures.length; i++){
-      if ((i === liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
-        $(liPictures[liPictures.length - 1]).removeClass('active');
-        $(liPictures[liPictures.length - 1]).fadeOut(1000);
-        $(liPictures[0]).addClass('active');
-        $(liPictures[0]).fadeIn(2000);
-        break;
-      }
-      if ((i < liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
-        $(liPictures[i]).removeClass('active');
-        $(liPictures[i]).fadeIn(1000);
-        $(liPictures[i + 1]).addClass('active');
-        $(liPictures[i + 1]).fadeIn(2000);
-        break;
-      }
-    }
-  });
-
   var timeLoop = setTimeout(carouselLoop, 5000);
 
   function carouselLoop() {
-    console.log("hi");
     for(i = 0; i < liPictures.length; i++){
       if ((i === liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
         $(liPictures[liPictures.length - 1]).removeClass('active');
