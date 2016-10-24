@@ -89,39 +89,31 @@ a:hover {
   position: fixed;
   text-align: right;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.4);
-}
-
-.opac-bar {
-  transition: background-color, 1s, box-shadow, 1s, ease-in-out;
-  -webkit-transition: background-color, 1s, box-shadow, 1s, ease-in-out;
-  background-color: rgba(0, 0, 0, 0) !important;
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0);
+  z-index: 3;
 }
 
 .nav-tsp {
   float:left;
   margin-left: 13px;
   margin-top: 2px;
+  position: relative;
 }
 
 .tsp-logo {
   width: 75px;
-  font-size: 30px;
-  font-family: blacklisted;
-  opacity: 0.7;
-  transition: opacity, 1s, ease-in-out;
-  -webkit-transition: opacity, 1s, ease-in-out;
 }
 
-.tsp-solid {
-  opacity: 1;
-  transition: opacity, 1s, ease-in-out;
-  -webkit-transition: opacity, 1s, ease-in-out;
+.tsp-logo:hover {
+  cursor: pointer;
 }
 
 .nav-burger {
   margin-right: 25px;
   float: right;
+}
+
+.nav-burger:hover {
+cursor: pointer;
 }
 
 .burger-icon {
@@ -170,6 +162,8 @@ a.media:hover {
 .carousel {
   width: 100%;
   height: 80vh;
+  text-align: center;
+  text-align: center;
 }
 
 .indicator-left {
@@ -182,7 +176,13 @@ a.media:hover {
   padding-right: 20px;
   font-size: 50px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+}
+
+.indicator-left:hover {
+  cursor: pointer;
 }
 
 .indicator-right {
@@ -195,12 +195,19 @@ a.media:hover {
   padding-left: 20px;
   font-size: 50px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+}
+
+.indicator-right:hover {
+  cursor: pointer;
 }
 
 .carousel-ol {
   list-style-type: none;
   margin-left: 0px !important;
+  text-align: center;
 }
 
 .carousel-li {
@@ -210,14 +217,17 @@ a.media:hover {
   z-index: -1;
 }
 
-.carousel-li-text {
-  color: black;
-  font-size: 35px;
+.carousel-text {
+  position: fixed;
+  font-family: bebas;
+  font-size: 55px;
+  top: 200px;
+  color: white;
+  width: 100%;
 }
 
 .carousel-img {
   width: 100%;
-
 }
 
 .active {
