@@ -35,7 +35,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .caraousel {
+  .carousel {
     height: 65vh !important;
   }
 
@@ -49,10 +49,13 @@
 
   .carousel-img {
     height: 65vh !important;
+    right: 100px !important;
+    position: relative;
+    z-index: -1;
   }
 
   .carousel-li {
-    top: -65vh;
+    top: -65vh !important;
   }
 
   .footer-form {
@@ -221,9 +224,11 @@ a.media:hover {
 }
 
 .carousel-text {
+  padding: 70px;
+  text-shadow: 1px 4px 20px rgba(0, 0, 0, 0.9);
   position: fixed;
   font-family: bebas;
-  font-size: 55px;
+  font-size: 70px;
   top: 200px;
   color: white;
   width: 100%;
@@ -233,6 +238,7 @@ a.media:hover {
 
 .carousel-img {
   width: 100%;
+  min-width: 1025px;
   height: 120vh;
 }
 

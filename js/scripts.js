@@ -82,6 +82,28 @@ $(document).ready(function(){
     for(i = 0; i < liPictures.length; i++){
       if ((i === liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
         $(liPictures[liPictures.length - 1]).removeClass('active');
+        $(liPictures[liPictures.length - 1]).fadeOut(1000);
+        $(liPictures[0]).addClass('active');
+        $(liPictures[0]).fadeIn(2000);
+        break;
+      }
+      if ((i < liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
+        $(liPictures[i]).removeClass('active');
+        $(liPictures[i]).fadeIn(1000);
+        $(liPictures[i + 1]).addClass('active');
+        $(liPictures[i + 1]).fadeIn(2000);
+        break;
+      }
+    }
+  });
+
+  var timeLoop = setTimeout(carouselLoop, 5000);
+
+  function carouselLoop() {
+    console.log("hi");
+    for(i = 0; i < liPictures.length; i++){
+      if ((i === liPictures.length - 1) && ($(liPictures[i]).hasClass('active'))) {
+        $(liPictures[liPictures.length - 1]).removeClass('active');
         $(liPictures[0]).addClass('active');
         break;
       }
@@ -91,8 +113,8 @@ $(document).ready(function(){
         break;
       }
     }
-  });
-
+    setTimeout(carouselLoop, 5000);
+  }
 
 
 });
