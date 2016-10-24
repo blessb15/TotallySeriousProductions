@@ -35,13 +35,24 @@
 }
 
 @media screen and (max-width: 600px) {
-  .welcome {
-    height: 75vh !important;
+  .caraousel {
+    height: 65vh !important;
   }
 
-  #tsp-pic {
-    height: 75vh !important;
-    width: 100% !important;
+  .indicator-left {
+    height: 65vh !important;
+  }
+
+  .indicator-right {
+    height: 65vh !important;
+  }
+
+  .carousel-img {
+    height: 65vh !important;
+  }
+
+  .carousel-li {
+    top: -65vh;
   }
 
   .footer-form {
@@ -50,14 +61,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .welcome {
-    height: 50vh !important;
-  }
-
-  #tsp-pic {
-    height: 50vh !important;
-    width: 100% !important;
-  }
 
   .video-title {
     font-size: 17px !important;
@@ -224,10 +227,13 @@ a.media:hover {
   top: 200px;
   color: white;
   width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .carousel-img {
   width: 100%;
+  height: 120vh;
 }
 
 .active {
