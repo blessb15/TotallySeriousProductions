@@ -59,7 +59,7 @@
   }
 
   .footer {
-    height: 600px !important;
+    height: 550px !important;
   }
 
   .carousel-li {
@@ -377,7 +377,7 @@ a.media:hover {
 // FOOTER
 
 .footer {
-  height: 400px;
+  height: 300px;
   position: relative;
   z-index: 1;
   box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.1);
@@ -414,26 +414,6 @@ a.media:hover {
   color: white;
 }
 
-.email-name {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  width: 234px;
-  height: 35px;
-  padding-left: 5px;
-  margin-bottom: 15px;
-}
-
-.email-subject {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: white;
-  width: 234px;
-  height: 35px;
-  padding-left: 5px;
-  margin-bottom: 15px;
-}
-
 .email-return {
   border-radius: 5px;
   border-style: solid;
@@ -442,6 +422,7 @@ a.media:hover {
   height: 35px;
   padding-left: 5px;
   margin-bottom: 15px;
+  font-family: serif;
 }
 
 .email-message {
