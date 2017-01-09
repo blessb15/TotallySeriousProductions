@@ -1,5 +1,0 @@
-# bowtie policy permits all requests unless more specific policy denies them
----
-
-permits:
-  methods: '*'
