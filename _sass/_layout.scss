@@ -1,3 +1,5 @@
+$carousel-height: 65vh;
+
 // FONTS
 
 @font-face {
@@ -201,7 +203,7 @@ a.media:hover {
 
 .carousel {
   width: 100%;
-  height: 80vh;
+  height: $carousel-height;
   text-align: center;
   text-align: center;
 }
@@ -209,7 +211,7 @@ a.media:hover {
 .carousel-left-fade {
   color: white;
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  height: 80vh;
+  height: $carousel-height;
   float: left;
   width: 150px;
   font-size: 50px;
@@ -222,7 +224,7 @@ a.media:hover {
 .carousel-right-fade {
   color: white;
   background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  height: 80vh;
+  height: $carousel-height;
   float: right;
   width: 150px;
   font-size: 50px;
@@ -246,16 +248,13 @@ a.media:hover {
 }
 
 .carousel-text {
-  padding: 70px;
   text-shadow: 1px 4px 20px rgba(0, 0, 0, 0.9);
   position: fixed;
   font-family: bebas;
   font-size: 70px;
-  top: 130px;
+  top: 27%;
   color: white;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .carousel-img {
@@ -281,9 +280,6 @@ a.media:hover {
   width: 100%;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding-left: 15px;
-  padding-top: 7px;
-  padding-bottom: 25px !important;
   text-align: center;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -378,8 +374,11 @@ a.media:hover {
 .footer {
   position: relative;
   z-index: 1;
-  box-shadow: 0px -5px 25px rgba(0, 0, 0, 0.1);
-  background-color: #7a7a7a;
+  background:
+  linear-gradient(
+    rgba(30,94,100,1),
+    rgba(0,0,0,0.9)
+  );
 }
 
 .footer-social {
