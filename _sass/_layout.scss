@@ -306,11 +306,10 @@ a.media:hover {
 }
 
 .video {
-  // width: 100%;
   display: inline-block;
   margin-bottom: 45px;
-  // padding-left: 25px;
-  // padding-right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .video-title {
